@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Case Convertor</h1>
+        <h2>Enter text in the input and choose a case convertor from the list of options</h2>
+        <hr>
+        <div class="options">
+            <select id="case-change">
+        <option value="">--Please Choose An Option--</option>
+        <option value="Camel Case">Camel Case</option>
+        <option value="Kebab Case">Kebab Case</option>
+        <option value="Snake Case">Snake Case</option>
+        <option value="Title Case">Title Case</option>
+        <option value="Strict Title Case">Strict Title Case</option>
+      </select>
+        </div>
+        <div class="input">
+            <label for="example">Enter text here:</label>
+            <input type="text" value="The quick brown fox jumped over the lazy dog" id="example">
+        </div>
+        <div class="result" id="result">Converting...</div>
+    </div>
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>

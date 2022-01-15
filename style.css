@@ -1,0 +1,81 @@
+:root {
+    --br: 1em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+}
+
+h1,
+h2 {
+    padding: 1rem;
+    margin: 0;
+}
+
+h2 {
+    opacity: 0.75;
+}
+
+hr {
+    border: 1px solid black;
+    opacity: 0.25;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgb(178, 212, 221);
+    padding: 2rem;
+    border-radius: var(--br);
+    display: grid;
+    gap: 1rem;
+    box-shadow: 0 5px 10px -5px #0005;
+}
+
+.options {
+    padding: 1rem;
+}
+
+.options select {
+    padding: 1rem;
+    border-radius: calc(var(--br) * 0.5);
+}
+
+.input {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5em;
+    align-items: center;
+    background-color: #fff8;
+    padding: 1em 1.6em;
+    border-radius: calc(var(--br) * 0.5);
+    margin-inline: 1rem;
+}
+
+.input input {
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.6rem;
+    border-radius: calc(var(--br) * 0.25);
+}
+
+.result {
+    padding: 1rem;
+    font-size: 2rem;
+    overflow-x: scroll;
+}
+
+.result::before {
+    font-size: smaller;
+    content: 'Result: ';
+    opacity: 0.75;
+}
